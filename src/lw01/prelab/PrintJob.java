@@ -12,7 +12,7 @@ public abstract class PrintJob implements Chargeable {
         this.id = id;
         this.pages = pages;
     }
-
+    
     public int getPages() {
         return pages;
     }
@@ -36,3 +36,6 @@ public abstract class PrintJob implements Chargeable {
         return id + " | " + label() + " | " + calculateCharge();
     }
 }
+
+
+
