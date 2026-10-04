@@ -14,7 +14,6 @@ public class Main {
         LinkedList<String[]> success= new LinkedList<>();
 
         Queue<String[]> queue = new LinkedList<>();
-            queue.addAll(orders);
         Stack<String[]> failed = new Stack<>();
 
 
@@ -34,6 +33,8 @@ public class Main {
 
             drinks.add(new String[]{drink, "EsTeh", "4"});
             drinks.add(new String[]{drink, "EsJeruk", "2"});
+        }
+            queue.addAll(orders);
 
             while (!queue.isEmpty()) {
                 String[] order = queue.poll();
@@ -42,6 +43,7 @@ public class Main {
                 String drink = order[2];
                 String table = order[3];
 
+                
                 String[] food = null;
                 if (!foods.isEmpty()) {
                     for (String[] f : foods) {
@@ -94,6 +96,5 @@ public class Main {
 }
 
 
-            }
         
 

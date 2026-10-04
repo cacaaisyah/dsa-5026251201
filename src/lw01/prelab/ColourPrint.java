@@ -1,4 +1,4 @@
-package lw01.prelab;
+package lw01;
 
 public class ColourPrint extends PrintJob {
 
